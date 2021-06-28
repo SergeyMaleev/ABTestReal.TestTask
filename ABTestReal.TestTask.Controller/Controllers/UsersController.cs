@@ -30,7 +30,7 @@ namespace ABTestReal.TestTask.Controller.Controllers
         [HttpGet("{id:int}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> GetUsers(int id)
+        public async Task<IActionResult> GetUser(int id)
         {
             var item = await _repository.GetById(id);
 
@@ -48,7 +48,7 @@ namespace ABTestReal.TestTask.Controller.Controllers
         {
             var result = await _repository.Add(item);
 
-            return CreatedAtAction("Id", new { id = result.Id });
+            return CreatedAtAction(nameof(GetUser), new { id = result.Id }, result);
         }
 
         [HttpPut]
@@ -63,7 +63,7 @@ namespace ABTestReal.TestTask.Controller.Controllers
                 return NotFound(item);
             }
 
-            return AcceptedAtAction("Id", new { id = result.Id });
+            return AcceptedAtAction(nameof(GetUser), new { id = result.Id }, result);
         }
 
         [HttpDelete]

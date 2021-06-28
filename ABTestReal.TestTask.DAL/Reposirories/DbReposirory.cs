@@ -38,7 +38,7 @@ namespace ABTestReal.TestTask.DAL.Reposirories
         {
             if (item is null) throw new ArgumentNullException(nameof(item));
 
-            await _db.AddAsync(item, cancel).ConfigureAwait(false);
+            await Set.AddAsync(item, cancel).ConfigureAwait(false);
             await _db.SaveChangesAsync(cancel).ConfigureAwait(false);
             return item;
         }
@@ -47,7 +47,7 @@ namespace ABTestReal.TestTask.DAL.Reposirories
         {
             if (item is null) throw new ArgumentNullException(nameof(item));
 
-            if (await this.GetById(item.Id, cancel) is null)
+            if (!await ExistId(item.Id, cancel))
             {
                 return null;
             }
@@ -101,6 +101,11 @@ namespace ABTestReal.TestTask.DAL.Reposirories
             _db.Update(item);
             await _db.SaveChangesAsync(cancel).ConfigureAwait(false);
             return item;
+        }
+
+        public async Task<bool> ExistId(int id, CancellationToken cancel = default)
+        {
+            return await Set.AnyAsync(x => x.Id == id, cancel).ConfigureAwait(false);
         }
     }
 }

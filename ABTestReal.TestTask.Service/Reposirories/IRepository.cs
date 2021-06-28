@@ -15,5 +15,6 @@ namespace ABTestReal.TestTask.Service.Reposirories
         Task<T> Update(T item, CancellationToken cancel = default);
         Task<T> Delete(T item, CancellationToken cancel = default);
         Task<T> DeleteById(int id, CancellationToken cancel = default);
+        Task<bool> ExistId(int id, CancellationToken cancel = default);
     }
 }
