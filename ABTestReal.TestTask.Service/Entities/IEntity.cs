@@ -5,7 +5,7 @@ using System.Text;
 namespace ABTestReal.TestTask.Service.Entities
 {
     public interface IEntity
-    {
-        int Id { get; }
+    {     
+        int Id { get; }      
     }
 }
