@@ -1,4 +1,6 @@
 using ABTestReal.TestTask.DAL.Context;
+using ABTestReal.TestTask.DAL.Reposirories;
+using ABTestReal.TestTask.Service.Reposirories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +32,8 @@ namespace ABTestReal.TestTask.Controller
             services.AddDbContext<DataDb>(
                 opt => opt
                 .UseNpgsql(Configuration.GetConnectionString("Data"), o => o.MigrationsAssembly("ABTestReal.TestTask.DAL.PostgreSQL")));
+
+            services.AddScoped(typeof(IRepository<>), typeof(DbReposirory<>));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

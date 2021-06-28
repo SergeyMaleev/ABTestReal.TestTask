@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ABTestReal.TestTask.DAL.Entities
+namespace ABTestReal.TestTask.Service.Entities
 {
     public interface IEntity
     {

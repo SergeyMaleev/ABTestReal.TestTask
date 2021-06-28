@@ -1,4 +1,4 @@
-﻿using ABTestReal.TestTask.DAL.Entities;
+﻿using ABTestReal.TestTask.Service.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;

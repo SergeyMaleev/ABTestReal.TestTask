@@ -4,10 +4,9 @@ using System.Text;
 
 namespace ABTestReal.TestTask.DAL.Entities
 {
-    public class UserEntity : IEntity
+    public class UserEntity : Entity
     {
-        public int Id { get; set; }
-
+        
         public DateTime DateRegistration { get; set; }
 
         public DateTime DateLastActivity { get; set; }

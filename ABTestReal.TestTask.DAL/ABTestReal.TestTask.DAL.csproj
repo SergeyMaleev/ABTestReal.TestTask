@@ -12,4 +12,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ABTestReal.TestTask.Service\ABTestReal.TestTask.Service.csproj" />
+  </ItemGroup>
+
 </Project>
