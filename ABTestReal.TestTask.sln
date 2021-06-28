@@ -9,11 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{86DE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controller", "Controller", "{B80D6A2C-56E8-4DCC-A55E-081AE8893C67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABTestReal.TestTask.DAL", "ABTestReal.TestTask.DAL\ABTestReal.TestTask.DAL.csproj", "{D898CAB5-E421-4AA5-9C7F-54AB6A684162}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ABTestReal.TestTask.DAL", "ABTestReal.TestTask.DAL\ABTestReal.TestTask.DAL.csproj", "{D898CAB5-E421-4AA5-9C7F-54AB6A684162}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABTestReal.TestTask.DAL.PostgreSQL", "ABTestReal.TestTask.DAL.PostgreSQL\ABTestReal.TestTask.DAL.PostgreSQL.csproj", "{ED880D53-D263-4667-9B68-2782C6DE990D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ABTestReal.TestTask.DAL.PostgreSQL", "ABTestReal.TestTask.DAL.PostgreSQL\ABTestReal.TestTask.DAL.PostgreSQL.csproj", "{ED880D53-D263-4667-9B68-2782C6DE990D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABTestReal.TestTask.Controller", "ABTestReal.TestTask.Controller\ABTestReal.TestTask.Controller.csproj", "{81875EDA-0182-4D62-BE40-AA4A61352B22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ABTestReal.TestTask.Controller", "ABTestReal.TestTask.Controller\ABTestReal.TestTask.Controller.csproj", "{81875EDA-0182-4D62-BE40-AA4A61352B22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABTestReal.TestTask.Service", "ABTestReal.TestTask.Service\ABTestReal.TestTask.Service.csproj", "{A7D834C8-86D0-4F14-8256-9D621E45626E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{81875EDA-0182-4D62-BE40-AA4A61352B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81875EDA-0182-4D62-BE40-AA4A61352B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81875EDA-0182-4D62-BE40-AA4A61352B22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7D834C8-86D0-4F14-8256-9D621E45626E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7D834C8-86D0-4F14-8256-9D621E45626E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7D834C8-86D0-4F14-8256-9D621E45626E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7D834C8-86D0-4F14-8256-9D621E45626E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{D898CAB5-E421-4AA5-9C7F-54AB6A684162} = {350AC560-FD93-4E41-B1B4-80D7AF1F0094}
 		{ED880D53-D263-4667-9B68-2782C6DE990D} = {350AC560-FD93-4E41-B1B4-80D7AF1F0094}
 		{81875EDA-0182-4D62-BE40-AA4A61352B22} = {B80D6A2C-56E8-4DCC-A55E-081AE8893C67}
+		{A7D834C8-86D0-4F14-8256-9D621E45626E} = {86DEB262-B20A-4D95-9AF4-C095B63E2E01}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {565DAA96-266F-4D60-B128-10AC3F97399E}
