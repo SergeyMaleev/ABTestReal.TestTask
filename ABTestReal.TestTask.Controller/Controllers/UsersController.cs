@@ -1,6 +1,6 @@
 ﻿using ABTestReal.TestTask.Controller.Controllers.Base;
 using ABTestReal.TestTask.DAL.Entities;
-using ABTestReal.TestTask.Service.Reposirories;
+using ABTestReal.TestTask.Interfaces.Reposirories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -14,9 +14,6 @@ namespace ABTestReal.TestTask.Controller.Controllers
     [ApiController]
     public class UsersController : EntityController<UserEntity>
     {
-
-        public UsersController(IRepository<UserEntity> repository) : base(repository) { }
-        
-     
+        public UsersController(IRepository<UserEntity> repository) : base(repository) { }       
     }
 }

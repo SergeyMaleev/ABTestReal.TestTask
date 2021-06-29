@@ -1,12 +1,12 @@
-﻿using ABTestReal.TestTask.Service.Entities;
+﻿using ABTestReal.TestTask.Interfaces.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ABTestReal.TestTask.Service.Reposirories
-{
+namespace ABTestReal.TestTask.Interfaces.Reposirories
+{    
     public interface IRepository<T> where T : IEntity
     {
         Task<IEnumerable<T>> GetAll(CancellationToken cancel = default);       

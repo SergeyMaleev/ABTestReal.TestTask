@@ -1,6 +1,8 @@
 using ABTestReal.TestTask.DAL.Context;
 using ABTestReal.TestTask.DAL.Reposirories;
-using ABTestReal.TestTask.Service.Reposirories;
+using ABTestReal.TestTask.Interfaces.Reposirories;
+using ABTestReal.TestTask.Interfaces.RollingRetentioService;
+using ABTestReal.TestTask.Services.RollingRetentioService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -34,6 +36,7 @@ namespace ABTestReal.TestTask.Controller
                 .UseNpgsql(Configuration.GetConnectionString("Data"), o => o.MigrationsAssembly("ABTestReal.TestTask.DAL.PostgreSQL")));
 
             services.AddScoped(typeof(IRepository<>), typeof(DbReposirory<>));
+            services.AddScoped(typeof(IRollingRetentionService<>), typeof(RollingRetentionService<>));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

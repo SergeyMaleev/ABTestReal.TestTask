@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ABTestReal.TestTask.DAL.PostgreSQL\ABTestReal.TestTask.DAL.PostgreSQL.csproj" />
     <ProjectReference Include="..\ABTestReal.TestTask.DAL\ABTestReal.TestTask.DAL.csproj" />
+    <ProjectReference Include="..\ABTestReal.TestTask.Services\ABTestReal.TestTask.Services.csproj" />
   </ItemGroup>
 
 </Project>

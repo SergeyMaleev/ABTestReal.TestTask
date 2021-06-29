@@ -1,6 +1,6 @@
 ﻿using ABTestReal.TestTask.DAL.Context;
 using ABTestReal.TestTask.DAL.Entities;
-using ABTestReal.TestTask.Service.Reposirories;
+using ABTestReal.TestTask.Interfaces.Reposirories;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

@@ -1,5 +1,5 @@
 ﻿using ABTestReal.TestTask.DAL.Entities;
-using ABTestReal.TestTask.Service.Reposirories;
+using ABTestReal.TestTask.Interfaces.Reposirories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,7 +12,7 @@ namespace ABTestReal.TestTask.Controller.Controllers.Base
     [ApiController]
     public abstract class EntityController<T> : ControllerBase where T : Entity
     {
-        private readonly IRepository<T> _repository;
+        protected readonly IRepository<T> _repository;
 
         protected EntityController(IRepository<T> repository)
         {

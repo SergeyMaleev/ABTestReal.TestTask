@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ABTestReal.TestTask.DAL\ABTestReal.TestTask.DAL.csproj" />
+    <ProjectReference Include="..\ABTestReal.TestTask.Service\ABTestReal.TestTask.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
